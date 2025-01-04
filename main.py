@@ -95,7 +95,7 @@ def goPlay(url):
             localtime = time.asctime( time.localtime(time.time()) )
             print_log(localtime)
             # 刷一次要休息100s, 即使有连接池貌似也不能随便刷, 你可以研究下
-            delay = random.randint(180,210)
+            delay = random.randint(150,180)
             time.sleep(delay)
         except Exception as e:
             print_log(e)
